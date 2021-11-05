@@ -1,7 +1,6 @@
 
 import os
-import threading
-from sqlalchemy import create_engine
+import threading 
 from sqlalchemy import Column, TEXT, Numeric
 from sqlalchemy.ext.declarative import declarative_base
 from config import DB_URI
