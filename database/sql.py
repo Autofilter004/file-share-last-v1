@@ -1,11 +1,11 @@
 
 import os
 import threading
-from sql import create_engine
-from sql import Column, TEXT, Numeric
-from sql.ext.declarative import declarative_base
+from sqlalchemy import create_engine
+from sqlalchemy import Column, TEXT, Numeric
+from sqlalchemy.ext.declarative import declarative_base
 from config import DB_URI
-from sql.orm import sessionmaker, scoped_session
+from sqlalchemy.orm import sessionmaker, scoped_session
 
 def start() -> scoped_session:
     engine = create_engine(DB_URI, client_encoding="utf8")
